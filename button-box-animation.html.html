@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #000;
+        }
+.box1{
+    background-color: black;
+    width: 30%;
+    height: 150px;
+    color: green;
+    justify-self: center;
+    align-content:center ;
+    text-align: center;
+    padding: 5px;
+        box-sizing: border-box;
+
+}
+button{
+    background-color: rgb(255, 233, 255);
+   
+    font-size: 30px;
+    border-end-end-radius: 30px;
+    border-start-start-radius:30px ;
+    outline: none;
+    border:none ;
+    padding: 6px;
+    transition: 0.3;
+    margin: 10px;
+    cursor: pointer;
+    /* opacity: 0.5; */ 
+}
+button:hover{
+    background-color: #000;
+    color: white;
+    animation: lightee 2s infinite linear;
+    border-radius: 200px;
+    padding: 20px;
+    transition-duration: 2s;transition-delay: 0.3s;
+
+}
+.box1:hover{
+    border-radius: 200px;
+
+    
+    color: white;
+
+        animation: lightee 2s infinite linear;
+
+}
+@keyframes lightee{
+    0%{
+        border-color:red;
+        box-shadow: 0 0   10px red,0 0 20px red,0 0 40px red ;
+    }
+    25%{
+        border-color:  yellow;
+        box-shadow: 0 0 10px yellow,0 0 20px yellow,0 0 40px yellow;
+    }
+    50%{
+border-color: lime ;
+box-shadow: 0 0 10px lime,
+0 0 20px lime,0 0 40px lime;
+    }
+    75%{
+        border-color: cyan;
+box-shadow: 0 0 10px cyan,
+0 0 20px cyan,
+0 0 40px cyan;
+    }
+    100%{
+        border-color: rgb(255, 254, 254) ;
+        box-shadow: 0 0 10px rgb(255, 255, 255),
+        0 0 20px rgb(255, 255, 255),
+         0 0 40px rgb(255, 255, 255);
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h1>AnimationBox</h1>
+        <button>AnimationButton</button>
+    </div>
+</body>
+</html>
